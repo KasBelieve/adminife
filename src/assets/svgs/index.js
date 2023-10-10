@@ -1,0 +1,13 @@
+export { ReactComponent as IconPasswordNotVisible } from "./password-visibility.svg";
+export { ReactComponent as IconPasswordVisible } from "./visible.svg";
+export { ReactComponent as IconSearch } from "./search-normal.svg";
+export { ReactComponent as IconHome } from "./home.svg";
+export { ReactComponent as IconCampaign } from "./campaign.svg";
+export { ReactComponent as IconPartnership } from "./partnership.svg";
+export { ReactComponent as IconMessage } from "./message.svg";
+export { ReactComponent as IconAddCircle } from "./add-circle.svg";
+export { ReactComponent as IconLogout } from "./login.svg";
+export { ReactComponent as IconMenu } from "./menu.svg";
+export { ReactComponent as IconClose } from "./close.svg";
+export { ReactComponent as IconArrowLeft } from "./arrowLeft.svg";
+export { ReactComponent as IconArrowRight } from "./arrowRight.svg";
