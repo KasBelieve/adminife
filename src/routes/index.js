@@ -53,6 +53,32 @@ const Routing = () => (
     })}
 
     {publicRoutes.map((publicRoute) => {
+      if (publicRoute.children) {
+        const Children = () => {
+          return (
+            <Routes>
+              {publicRoute?.children?.map((child, index) => {
+                return (
+                  <Route
+                    path={child.path}
+                    key={index}
+                    index={child.index}
+                    element={child.element}
+                  />
+                );
+              })}
+            </Routes>
+          );
+        };
+        return (
+          <Route
+            key={Math.random()}
+            path={publicRoute.path}
+            element={<Children />}
+          />
+        );
+      }
+
       return (
         <Route
           key={Math.random()}
