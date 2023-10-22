@@ -4,6 +4,8 @@ import CampaignsContents from "pages/dashboard/campaigns";
 import HomeContents from "pages/dashboard/home";
 import MessageContents from "pages/dashboard/message";
 import PartnershipContents from "pages/dashboard/partnerships";
+import OngoingContents from "pages/dashboard/campaigns/ongoingcampaign";
+
 import { Outlet } from "react-router-dom";
 
 export const adminRoutes = [
@@ -31,6 +33,11 @@ export const adminRoutes = [
         path: "*",
         element: <NotFound />,
       },
+      {
+        path: "ongoingcampaign",
+        element: <OngoingContents />,
+      },
+
     ],
   },
 ];
