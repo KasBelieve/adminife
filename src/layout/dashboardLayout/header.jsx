@@ -17,8 +17,8 @@ const Header = ({ setToggle, toggle }) => {
         {toggle ? <IconClose /> : <IconMenu />}
       </div>
       <div className="flex justify-center items-center gap-2">
-        <p className="text-lg max-[880px]:text-xs">Admin Bimpe</p>
-        <div className="w-[60px] h-[60px] max-md:w-[35px] max-md:h-[35px] rounded-full">
+        <p className="text-lg max-[880px]:text-xs sm:text-lg">Bimpe Gold</p>
+        <div className="w-[60px] h-[60px] max-md:w-[35px] max-md:h-[35px] rounded-full sm:mr-12">
           <img src={ActiveUser} alt="Active User" />
         </div>
       </div>

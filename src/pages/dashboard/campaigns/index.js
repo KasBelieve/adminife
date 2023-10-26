@@ -13,27 +13,24 @@ const CampaignsContents = () => {
       <h1 className="text-2xl font-semibold mt-3">Campaigns</h1>
         <div >
         <TaiwindCSSButton>
-        
-     
-      Start New Campaign
-        
-         
+      Start New Campaign 
          </TaiwindCSSButton>
         </div>  
       </div>
-      <div className="flex gap-20 font-semibold mt-4" >
+
+      <div className="flex gap-20 font-semibold mt-4 sm:ml-16">
         <a href="campaigns" className="hover:bg-green-300 focus:scale-95 transition-all duration-200 ease-out rounded px-2"> All Campaigns</a>
         <a href="campaigns" className="hover:bg-green-300 focus:scale-95 transition-all duration-200 ease-out rounded px-2" > Ongoing Campaigns</a>
         <a href="#" className="hover:bg-green-300 focus:scale-95 transition-all duration-200 ease-out rounded px-2"> Completed</a>
-
       </div>
+
       {/* grid */}
-      <div className="flex gap-20 justify-between  container mx-auto mt-10 p-8">
+      <div className="flex gap-20 justify-between  container mx-auto mt-10 p-8 sm:ml-12 sm:pl-20 lg:ml-2">
          {/* cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 sm:ml-6">
           <div card="rounded-xl shadow-lg">
             <div className=" flex flex-col mb-11 p-8 bg-slate-200 rounded-md  h-60 mx-2">
-              <div className="rounded overflow-hidden w-8 h-8"> 
+              <div className="rounded overflow-hidden w-14 h-12 lg:ml-28 md:ml-24 sm:ml-32"> 
                 <img src={pix1} className="h-80"/>
               </div>
               <h5 className="text-x md:text-sm font-medium mt-3 mb-8">
@@ -58,7 +55,7 @@ const CampaignsContents = () => {
           
           <div card="rounded-xl shadow-lg ">
             <div className=" flex flex-col mb-11 p-8 bg-slate-200 rounded-md  h-60 mx-2">
-              <div className="rounded overflow-hidden w-8 h-8"> 
+              <div className="rounded overflow-hidden w-14 h-12 lg:ml-28 md:ml-24 sm:ml-32"> 
                 <img src={pix1} className="h-80"/>
               </div>
               <h5 className="text-x md:text-sm font-medium mt-3 mb-8">
@@ -83,7 +80,7 @@ const CampaignsContents = () => {
 
           <div card="rounded-xl shadow-lg">
             <div className=" flex flex-col mb-11 p-8 bg-slate-200 rounded-md  h-60 mx-2">
-              <div className="rounded overflow-hidden w-8 h-8"> 
+              <div className="rounded overflow-hidden w-14 h-12 lg:ml-28 md:ml-24 sm:ml-32"> 
                 <img src={pix1} className="h-80"/>
               </div>
               <h5 className="text-x md:text-sm font-medium mt-3 mb-8">
@@ -119,7 +116,7 @@ const CampaignsContents = () => {
 };
 function TaiwindCSSButton(props){
   return(
-      <button className="bg-green-700 font-medium px-4 py-2 rounded text-white hover:bg-blue-300 focus:scale-95 transition-all duration-200 ease-out">
+      <button className="bg-green-700 font-medium px-2 mr-8 py-2 rounded text-white hover:bg-violet-400 focus:scale-95 transition-all duration-200 ease-out">
        
        {props.children}
       </button>
